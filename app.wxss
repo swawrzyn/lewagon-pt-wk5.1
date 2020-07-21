@@ -1,0 +1,14 @@
+/**app.wxss**/
+.container {
+  font-family: monospace;
+  background-size: cover;
+  height: 100vh;
+  padding: 100rpx 50rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 25rpx;
+  box-sizing: border-box;
+  color: white;
+} 
