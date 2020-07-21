@@ -14,7 +14,6 @@ Page({
   },
   onLoad: function () {},
   inputChange: function(e) {
-    console.log('e', e)
     this.setData({
       inputVal: e.detail.value,
     })
