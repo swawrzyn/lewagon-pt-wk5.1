@@ -1,21 +1,18 @@
 <!--index.wxml-->
 <view class="container" style="background-image: url('bg.jpg')">
   <view class="title">
-    Favourite Movie List
+    Unknown Movie
   </view>
   <scroll-view scroll-y="{{true}}" enable-flex="{{true}}" scroll-into-view="{{scrollInto}}" scroll-with-animation="{{true}}" style="height: 800rpx" class="list">
-    <view bindtap="toMovie" wx:for="{{items}}" id="item-{{it.id}}" wx:for-item="it" wx:key="id" wx:for-index="idx" class="item">
-      <view class="number" >
-        #{{idx + 1}}
-      </view>
+    <view wx:for="{{items}}" id="item-{{it.id}}" wx:for-item="it" wx:key="id" wx:for-index="idx" class="item">
       <view class="name">
-        {{it.name}}
+        {{it.text}}
       </view>
     </view>
   </scroll-view>
   <form bindreset="formReset">
     <view class="add-movie">
-      <input class="input" name="input" bindinput="inputChange" bindconfirm="formReset" placeholder="Input next movie" />
+      <input class="input" name="input" bindinput="inputChange" bindconfirm="formReset" placeholder="Input your comment" />
     </view>
     <button form-type="reset">Submit</button>
   </form>

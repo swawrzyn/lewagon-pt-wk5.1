@@ -1,0 +1,53 @@
+.title {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 52rpx;
+  font-weight: bold;
+  padding: 50rpx 0;
+  margin: 0 15rpx;
+  border: 1rpx solid black;
+  box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+  background-color: white;
+  color: black;
+}
+
+.list {
+  width: 100%;
+  margin-top: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.list .item {
+  color: black;
+  background-color: white;
+  min-height: 150rpx;
+  margin: 20rpx 0;
+  width: 95%;
+  font-size: 36rpx;
+  box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+}
+
+.item .name {
+  width: 100%;
+  font-size:28rpx;
+  padding: 15rpx;
+}
+
+.add-movie {
+  width: 100%;
+  margin: 50rpx 15rpx;
+  background: white;
+  padding: 20rpx;
+  width: 90%;
+  box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+  color: black;
+}
+
+.input {
+  
+}

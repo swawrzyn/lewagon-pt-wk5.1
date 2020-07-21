@@ -5,19 +5,14 @@ const app = getApp();
 Page({
   data: {
     items: [
-      { id: 1, name: "Indiana Jones" },
-      { id: 2, name: "Star Wars" },
-      { id: 3, name: "Inception" },
+      { id: 1, text: "This is the first comment." },
+      { id: 2, text: "This is the second comment." },
+      { id: 3, text: "This is the third comment." },
     ],
     scrollInto: '',
     inputVal: '',
   },
   onLoad: function () {},
-  toMovie: function(e) {
-    wx.navigateTo({
-      url: 'detail'
-    })
-  },
   inputChange: function(e) {
     this.setData({
       inputVal: e.detail.value,
