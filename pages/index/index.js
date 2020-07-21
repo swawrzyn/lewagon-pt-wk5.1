@@ -12,10 +12,24 @@ Page({
     scrollInto: '',
     inputVal: '',
   },
-  onLoad: function () {},
+  onLoad: function () {
+    const Movie = new wx.BaaS.TableObject('movies');
+
+    Movie.find().then((res) => {
+      console.log('res', res);
+      this.setData({
+        items: res.data.objects
+      })
+    })
+
+    console.log('first!');
+
+  },
   toMovie: function(e) {
+    console.log('e', e);
+    const id = e.currentTarget.dataset.id;
     wx.navigateTo({
-      url: 'detail'
+      url: 'detail?id=' + id, 
     })
   },
   inputChange: function(e) {
